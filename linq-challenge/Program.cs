@@ -37,6 +37,36 @@
                 Console.WriteLine($"Product Price: {product.Price}");
             }
 
+            /*
+             * Q6:
+                For each product category, return:
+                    1. Category name
+                    2. Number of products
+                    3. Average product price
+                    4. Most expensive product price
+                    5. Sort the categories by their average product price in descending order.
+            */
+
+            var productsByCategory =
+                products
+                .GroupBy(p => p.Category)
+                .Select(prdct => new
+                {
+                    Category = prdct.Key,
+                    Count = prdct.Count(),
+                    AveragePrice = prdct.Average(p => p.Price),
+                    MostExpensiveProduct = prdct.Max(p => p.Price)
+                })
+                .OrderByDescending(p => p.AveragePrice);
+
+            Console.WriteLine("Q6: Products by category:");
+
+            foreach (var productsGroup in productsByCategory)
+            {
+                Console.WriteLine($"Category: {productsGroup.Category}");
+                Console.WriteLine($" - NO of products: {productsGroup.Count}");
+                Console.WriteLine($" - Most expensive Product Price: {productsGroup.MostExpensiveProduct}");
+            }
         }
     }
 }
