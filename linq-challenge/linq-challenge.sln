@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "linq-challenge", "linq-challenge.csproj", "{1FB76D1E-9315-4189-99C2-FAEE57CF1C02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FB76D1E-9315-4189-99C2-FAEE57CF1C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FB76D1E-9315-4189-99C2-FAEE57CF1C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FB76D1E-9315-4189-99C2-FAEE57CF1C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FB76D1E-9315-4189-99C2-FAEE57CF1C02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4DCEF90C-786D-4F49-9FED-59BD9298FAF2}
+	EndGlobalSection
+EndGlobal
