@@ -12,7 +12,7 @@ namespace linq_challenge
         public int Age { get; set; }
         public double Grade { get; set; }
 
-        Student(string name, int age, double grade)
+        public Student(string name, int age, double grade)
         {
             Name = name;
             Age = age;
